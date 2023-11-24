@@ -1,6 +1,4 @@
-// Lesson 05.07 - FINAL
 // Accordion Menu
-// adapted from: https://www.w3schools.com/howto/howto_js_accordion.asp
 
 const panelsArr = document.querySelectorAll("section button");
 
