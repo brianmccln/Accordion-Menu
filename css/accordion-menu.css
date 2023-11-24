@@ -47,6 +47,7 @@ section div {
     to animate height expanding */
     max-height: 0; 
     overflow: hidden;
+    text-align: left;
     /* change to max-height takes 0.5 seconds,
     which gives the animation effect */
     transition: max-height 0.5s ease-out;
