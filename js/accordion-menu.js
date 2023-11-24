@@ -18,7 +18,7 @@ function showHidePanel() {
     const hiddenDiv = this.nextElementSibling;
     console.log('hiddenDiv:', hiddenDiv);
     if(hiddenDiv.style.height) {
-        hiddenDiv.style.height = "0";
+        hiddenDiv.style.height = null;
     } else {
         hiddenDiv.style.height = hiddenDiv.scrollHeight + "px";
     } 
