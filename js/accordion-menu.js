@@ -17,10 +17,10 @@ function showHidePanel() {
     // until the button is clicked
     const hiddenDiv = this.nextElementSibling;
     console.log('hiddenDiv:', hiddenDiv);
-    if(hiddenDiv.style.maxHeight) {
-        hiddenDiv.style.maxHeight = null;
+    if(hiddenDiv.style.height) {
+        hiddenDiv.style.height = "0";
     } else {
-        hiddenDiv.style.maxHeight = hiddenDiv.scrollHeight + "px";
+        hiddenDiv.style.height = hiddenDiv.scrollHeight + "px";
     } 
   };
 

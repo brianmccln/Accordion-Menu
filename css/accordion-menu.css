@@ -45,12 +45,12 @@ section div {
     background-color: #eee;
     /* max-height: 0 instead of display none, 
     to animate height expanding */
-    max-height: 0; 
+    height: 0; 
     overflow: hidden;
     text-align: left;
     /* change to max-height takes 0.5 seconds,
     which gives the animation effect */
-    transition: max-height 0.5s ease-out;
+    transition: height 0.5s ease-out;
 }
 
 h1, h2, h3 {
