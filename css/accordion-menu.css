@@ -53,16 +53,17 @@ section div {
     transition: max-height 0.5s ease-out;
 }
 
-.plus {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 h1, h2, h3 {
     color: #fff;
 }
 
-.menu-label {
+/* span tags */
+.plus-sign {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-label {
     font-size: 1.1rem;
     font-weight: bold;
     /* background-color: orange; */
