@@ -1,4 +1,7 @@
-## Accordify Accordion Menu
+## Accordify 
+### Accordion Menu
+#### by Brian McClain
+#### Instructor of JavaScript and Python Programming; Noble Desktop, NYC
 - This **Accordify** accordion widget / plugin can be deployed anywhere in your website, integrating seamlessly with your existing code.
 - In your html page, import the css into your html page's **head**:
 ```js
