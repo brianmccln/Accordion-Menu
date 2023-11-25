@@ -12,8 +12,6 @@ integrating seamlessly with your existing code.
     - Click the button to open/close the accordion.
 - Each **li** also contains a **div** which appears when the accordion opens.
     - The div can contain whatever content you wish to put in it, but in these examples the divs just contain text.
-- Each **li** contains a button to click to open/close the accordion item,  
-which shows/hides the contents, which consists of a div with text.  
 - **animation**: The accordion uses CSS transition property and JavaScript to animate the opening and closing of the accordion menu items.
 
 ### The four versions of the Accordion Menu:
