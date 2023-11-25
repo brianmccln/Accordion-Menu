@@ -44,7 +44,7 @@ in the JavaScript.
 ```
 - To use **v.1.0**, add this to the bottom of your html page:
 
-```js
+```jss
     <script src="js/v.1.0-accordify-hard-coded.js"></script>
 ```
 
@@ -52,7 +52,7 @@ in the JavaScript.
 - The **<ul class="accordify"** is still hard-coded into the html, but only as an empty tag. All the **li** tags, complete with their child buttons and divs, are all made dynamically in JS, using data provided by **accordify-data.js**.
 - This v.1.5 version, as well as all higher versions, import **accordify-data.js**, which contains an array of objects, one object per accordion item.
 - To use **v.1.5**, import it the bottom of your html page. It needs to be imported above the **v.1.5** js file.
-- If you want html in the div, such as p-tags, images, etc. add these in the dataset as part of the **divText** string.
+- If you want html in the div, such as p-tags, images, etc. add these in the dataset as part of the **divHTML** string.
 ```js
     <script src="js/accordify-data.js"></script>
     <script src="js/v.1.5-accordion-dynamic-menu.js"></script>
@@ -109,7 +109,7 @@ in the JavaScript.
         </div>
     </li>
 ```
-- For **v.1.5+**, the versions that use the dataset, add the **img** tag and any other html directly in the **divText** string:
+- For **v.1.5+**, the versions that use the dataset, add the **img** tag and any other html directly in the **divHTML** string:
 
 ```js
   {btnText:'Cat', divHTML:`<img src="cat.jpg"><p>Meet my cat!</p>`}
