@@ -5,7 +5,7 @@ integrating seamlessly with your existing code.
 - This project has four versions of an accordion menu.  
 - Each version has its own **html** and **js** files. 
 - Versions **1.5+** also use the **accordion-data.js** file.
-- All four versions use the same **css*** file.
+- All four versions use the same **css** file.
 - The accordion is structured as a **ul**, hard-coded into the html.
 - Each accordion item is a **li** tag inside the **ul**.
 - Each **li** contains a **button** which is seen when the accordion is closed.
