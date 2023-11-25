@@ -17,7 +17,7 @@ The different imports are shown below for each of the four versions:
 - All four versions look and behave identically in the browser--  
 the difference is in how the same result is made four different ways  
 in the JavaScript.
-- Versions **1.5+** also use the **accordion-data.js** file.
+- Versions **1.5+** also use the **accordify-data.js** file.
 - All four versions use the same **css** file.
 - The accordion is structured as a **ul**, hard-coded into the html.
 - Each accordion item is a **li** tag inside the **ul**.
@@ -46,12 +46,12 @@ in the JavaScript.
 ```
 
 **v.1.5 - Accordify Dynamic Menu** :  
-- The **<ul class="accordify"** is still hard-coded into the html, but only as an empty tag. All the **li** tags, complete with their child buttons and divs, are all made dynamically in JS, using data provided by **accordion-data.js**.
-- This v.1.5 version, as well as all higher versions, import **accordion-data.js**, which contains an array of objects, one object per accordion item.
+- The **<ul class="accordify"** is still hard-coded into the html, but only as an empty tag. All the **li** tags, complete with their child buttons and divs, are all made dynamically in JS, using data provided by **accordify-data.js**.
+- This v.1.5 version, as well as all higher versions, import **accordify-data.js**, which contains an array of objects, one object per accordion item.
 - To use **v.1.5**, import it the bottom of your html page. It needs to be imported above the **v.1.5** js file.
 - If you want html in the div, such as p-tags, images, etc. add these in the dataset as part of the **divText** string.
 ```js
-    <script src="js/accordion-data.js"></script>
+    <script src="js/accordify-data.js"></script>
     <script src="js/v.1.5-accordion-dynamic-menu.js"></script>
 ```
 
@@ -60,7 +60,7 @@ in the JavaScript.
 - To use **v.2.0**, add this to the bottom of your html page:
 
 ```js
-    <script src="js/accordion-data.js"></script>
+    <script src="js/accordify-data.js"></script>
     <script src="js/v.2.0-Accordify.js"></script>
     <script>
         const accordify = new Accordify(".accordify", accordionData);
@@ -73,7 +73,7 @@ in the JavaScript.
 - To use **v.2.1**, add this to the bottom of your html page.
 
 ```js
-    <script src="js/accordion-data.js"></script>
+    <script src="js/accordify-data.js"></script>
     <script src="js/v.2.1-Accordify.min.js"></script>
     <script>
         const accordify = new Accordify(".accordify", accordionData);
@@ -84,9 +84,9 @@ in the JavaScript.
     <link href="css/accordify-styles.min.css" rel="stylesheet">
 ```
 
-### About the **accordion-data.js** file and how to use it:  
-- **accordion-data.js** provides the data for all accordion versions with the exception of **v.1.0**, which is hard-coded.
-- **accordion-data.js**, has two keys: **btnText** and **divHTML**. 
+### About the **accordify-data.js** file and how to use it:  
+- **accordify-data.js** provides the data for all accordion versions with the exception of **v.1.0**, which is hard-coded.
+- **accordify-data.js**, has two keys: **btnText** and **divHTML**. 
 - Change the values to be your own text. Suppose you had two accordion menu buttons, **Foo** and **Bar**. Clicking either button expanded that **li** to reveal a div containing a paragraph of **lorem impum** text. This is what the objects for that would look like:
 ```js
     {btnText:'Foo', divHTML:`<p>Lorem ipsum dolor sit amet.</p>`},
