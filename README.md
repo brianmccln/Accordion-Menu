@@ -21,10 +21,10 @@ in the JavaScript.
 - All four versions use the same **css** file.
 - The accordion is structured as a **ul**, hard-coded into the html.
 - Each accordion item is a **li** tag inside the **ul**.
-- Each **li** contains a **button** which is seen when the accordion is closed.
-    - Click the button to open/close the accordion.
+- Each **li** contains a **button**, which is the only visible part of the accordion when the accordion is fully closed.
+- Click the button to open/close one of the accordion items. The part that appears is teh **li** for that list item.
 - Each **li** also contains a **div** which appears when the accordion opens.
-    - The div can contain whatever content you wish to put in it, but in these examples the divs just contain text.
+- The div can contain whatever content you wish to put in it, but in these examples the divs just contain text.
 - **animation**: The accordion uses CSS transition property and JavaScript to animate the opening and closing of the accordion menu items.
 
 ### The four versions of the Accordion Menu:
