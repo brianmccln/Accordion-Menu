@@ -13,7 +13,7 @@ body {
     background-color: #888;
 }
 
-.accordion-ul {
+.accordify {
     list-style-type: none;
     background-color: #eee;
     padding: 1rem;
@@ -23,11 +23,11 @@ body {
     font-size: 1.1rem;
 }
 
-.accordion-ul li {
+.accordify li {
     color: #555;
 }
 
-.accordion-ul button {
+.accordify button {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,7 @@ body {
     color: #333;
 }
 
-.accordion-ul div {
+.accordify div {
     padding: 0 2rem;
     background-color: #eee;
     text-align: left;
@@ -54,15 +54,15 @@ body {
     overflow: hidden;
     /* change to max-height takes 0.5 seconds,
     which gives the animation effect */
-    transition: height 0.5s ease-out;
+    transition: height 0.3s ease-out;
 }
 
-.accordion-ul span {
+.accordify span {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.accordion-ul button:hover, .btn-hilite {
+.accordify button:hover, .btn-hilite {
     /* reverse accordion button colors on mouseover or click */
     filter: invert();
 }

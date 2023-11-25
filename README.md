@@ -1,16 +1,16 @@
-## Accordion Menu
-- This accordion widget / plugin can be deployed anywhere in your website,  
-integrating seamlessly with your existing code.
+## Accordify Accordion Menu
+- This **Accordify** accordion widget / plugin can be deployed anywhere in your website, integrating seamlessly with your existing code.
 - In your html page, import the css into your html page's **head**:
 ```js
-    <link href="css/accordion-menu.css" rel="stylesheet">
+    <link href="css/accordify-styles.css" rel="stylesheet">
 ```
-- Add this **ul** tag in your html, wherever you want the accordion to appear:
+
+- In your html page, add this **ul** tag wherever you want the accordion to appear:
 ```js
     <ul class="accordiion-ul"></ul>
 ```
-- Import the js file(s) at the end of the body. The different imports are  
-shown below for each of the four versions:
+- Import the js file(s) at the end of the body.  
+The different imports are shown below for each of the four versions:
 
 - This project has four versions of an accordion menu.  
 - Each version has its own **html** and **js** files. 
@@ -27,64 +27,61 @@ in the JavaScript.
 - The div can contain whatever content you wish to put in it, but in these examples the divs just contain text.
 - **animation**: The accordion uses CSS transition property and JavaScript to animate the opening and closing of the accordion menu items.
 
-### The four versions of the Accordion Menu:
+### The four versions of the Accordify Menu:
 
-**v.1.0 Accordion Menu** :  
-- The static **ul** and **li** elements are all hard-coded in html.  
-- The hard-coded **li** tags each contain a button and a div.
-- Change to button and div content to be whatever text you wish.
-- You can add images or whatever else you like inside the div.
+**v.1.0 Accordify Hard-Coded** :  
+- The **li** tags are all hard-coded in the **ul**.  
+- The **li** tags each contain a hard-coded button and div.
+- Change to button and div content from the demo gibberish to whatever text you wish. You can all add images or other html tags inside the div.
 ```js
     <li>
         <button>Blather<span>+</span></button>
-        <div>
-            <p>
-                Blah blee foo bar tic tac toe.
-            </p>
-        </div>
+        <div><p>Blah blee foo bar tic tac toe.</p></div>
     </li>
 ```
 - To use **v.1.0**, add this to the bottom of your html page:
 
 ```js
-    <script src="js/v.1.0-accordion-menu.js"></script>
+    <script src="js/v.1.0-accordify-hard-coded.js"></script>
 ```
 
-
-**v.1.5 - Accordion Dynamic Menu** :  
-- The contents of the **".ul-accordion"** are made dynamically in JS.  
-- This version, and all higher versions, import **accordion-data.js**, which contains an array of objects, one object per accordion item.
-- To use **v.1.5**, add this to the bottom of your html page:
-- If you want html in the div, such as p-tags, images, etc. you have to add these in the dataset as part of the **divText** string.
+**v.1.5 - Accordify Dynamic Menu** :  
+- The **".ul-accordion"** is still hard-coded into the html, but only as an empty tag. All the **li** tags, complete with their child buttons and divs, are all made dynamically in JS, using data provided by **accordion-data.js**.
+- This v.1.5 version, as well as all higher versions, import **accordion-data.js**, which contains an array of objects, one object per accordion item.
+- To use **v.1.5**, import it the bottom of your html page. It needs to be imported above the version js file.
+- If you want html in the div, such as p-tags, images, etc. add these in the dataset as part of the **divText** string.
 ```js
     <script src="js/accordion-data.js"></script>
     <script src="js/v.1.5-accordion-dynamic-menu.js"></script>
 ```
 
-**v.2.0 - Accordionify OOP** :  
-- All JS in **Class Accordionify**
-- Class file imported into html page and instantiated:
+**v.2.0 - Accordify OOP** :  
+- For this version, the accordion menu is made by the **Accordify** Class, which you need to import into your html page and instantiate.
 - To use **v.2.0**, add this to the bottom of your html page:
 
 ```js
     <script src="js/accordion-data.js"></script>
-    <script src="js/v.2.0-Accordionify.js"></script>
+    <script src="js/v.2.0-Accordify.js"></script>
     <script>
-        const ac = new Accordionify(".accordion-ul", accordionData);
+        const accordify = new Accordify(".accordion-ul", accordionData);
     </script>
 ```
 
-**v.2.1 - Accordionify Minified** : 
+**v.2.1 - Accordify OOP Minified** : 
 - Same as v.2.0, just with the JS Class file minified to make it smaller 
 - The minified version, **Accordionify.min.js** is only 558 bytes.
-- To use **v.2.1**, add this to the bottom of your html page:
+- To use **v.2.1**, add this to the bottom of your html page.
 
 ```js
     <script src="js/accordion-data.js"></script>
-    <script src="js/v.2.1-Accordionify.min.js"></script>
+    <script src="js/v.2.1-Accordify.min.js"></script>
     <script>
-        const ac = new Accordionify(".accordion-ul", accordionData);
+        const accordify = new Accordify(".accordion-ul", accordionData);
     </script>
+```
+- In keeping with the minified theme, you may wish to also use the **.min.css**:
+```js
+    <link href="css/accordify-styles.min.css" rel="stylesheet">
 ```
 
 ### About the **accordion-data.js** file and how to use it:  
@@ -96,9 +93,9 @@ in the JavaScript.
     { btnText: "Bar", divHTML: `<p>Recusandae provident doloremque nam, deserunt eveniet quas commodi mollitia dolorem beatae quo ratione vitae, aspernatur corporis asperiores voluptatum et nemo veritatis possimus, repudiandae esse enim?</>` },
 ```
 - **btnText** appears on the individual accordion button. This is what you see to click on.
-- **divText** is the content that shows/hides when accordion opens/closes.
+- **divHTML** is the content that shows/hides when accordion opens/closes.
 
-**Adding images to the Accordion**
+**Adding images to the Accordify Accordion Menu**
 - For **v.1.0**, just hard-code the image path into the div:
 ```js
     <li>
@@ -109,8 +106,7 @@ in the JavaScript.
         </div>
     </li>
 ```
-- For **v.1.5+**, the versions that use the dataset, add the image tag code   
-directly in the **divText** string. Add any other tags, such as **<p>** as well:
+- For **v.1.5+**, the versions that use the dataset, add the **img** tag and any other html directly in the **divText** string:
 
 ```js
   { btnText: "Bar", divHTML: `<img src="cat.jpg"><p>Recusandae provident doloremque nam, deserunt eveniet quas commodi mollitia dolorem</p>` }

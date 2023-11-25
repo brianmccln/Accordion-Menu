@@ -1,4 +1,4 @@
-const accordionData = [
+const accordifyData = [
 
     { 
         btnText: "Balderdash", 
