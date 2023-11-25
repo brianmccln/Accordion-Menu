@@ -89,8 +89,8 @@ in the JavaScript.
 - **accordion-data.js**, has two keys: **btnText** and **divHTML**. 
 - Change the values to be your own text. Suppose you had two accordion menu buttons, **Foo** and **Bar**. Clicking either button expanded that **li** to reveal a div containing a paragraph of **lorem impum** text. This is what the objects for that would look like:
 ```js
-    { btnText: "Foo", divHTML: `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores saepe nam natus, earum provident aperiam ipsum omnis excepturi sit? Totam modi debitis iusto nisi consequuntur necessitatibus maxime?<p>` },
-    { btnText: "Bar", divHTML: `<p>Recusandae provident doloremque nam, deserunt eveniet quas commodi mollitia dolorem beatae quo ratione vitae, aspernatur corporis asperiores voluptatum et nemo veritatis possimus, repudiandae esse enim?</>` },
+    {btnText:"Foo", divHTML:`<p>Lorem ipsum dolor sit amet.</p>`},
+    {btnText:"Bar", divHTML:`<p>Recusandae provident asqit.</p>`},
 ```
 - **btnText** appears on the individual accordion button. This is what you see to click on.
 - **divHTML** is the content that shows/hides when accordion opens/closes.
