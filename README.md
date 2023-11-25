@@ -48,7 +48,7 @@ in the JavaScript.
 **v.1.5 - Accordify Dynamic Menu** :  
 - The **<ul class="accordify"** is still hard-coded into the html, but only as an empty tag. All the **li** tags, complete with their child buttons and divs, are all made dynamically in JS, using data provided by **accordion-data.js**.
 - This v.1.5 version, as well as all higher versions, import **accordion-data.js**, which contains an array of objects, one object per accordion item.
-- To use **v.1.5**, import it the bottom of your html page. It needs to be imported above the version js file.
+- To use **v.1.5**, import it the bottom of your html page. It needs to be imported above the **v.1.5** js file.
 - If you want html in the div, such as p-tags, images, etc. add these in the dataset as part of the **divText** string.
 ```js
     <script src="js/accordion-data.js"></script>
