@@ -89,8 +89,8 @@ in the JavaScript.
 - **accordion-data.js**, has two keys: **btnText** and **divHTML**. 
 - Change the values to be your own text. Suppose you had two accordion menu buttons, **Foo** and **Bar**. Clicking either button expanded that **li** to reveal a div containing a paragraph of **lorem impum** text. This is what the objects for that would look like:
 ```js
-    {btnText:"Foo", divHTML:`<p>Lorem ipsum dolor sit amet.</p>`},
-    {btnText:"Bar", divHTML:`<p>Recusandae provident asqit.</p>`},
+    {btnText:'Foo', divHTML:`<p>Lorem ipsum dolor sit amet.</p>`},
+    {btnText:'Bar', divHTML:`<p>Recusandae provident asqit.</p>`},
 ```
 - **btnText** appears on the individual accordion button. This is what you see to click on.
 - **divHTML** is the content that shows/hides when accordion opens/closes.
@@ -101,7 +101,7 @@ in the JavaScript.
     <li>
         <button>Blather<span>+</span></button>
         <div>
-            <image src="some-image.jpg">
+            <image src='blee-blah.jpg'>
             <p>Blah blee foo bar tic tac toe.</p>
         </div>
     </li>
@@ -109,5 +109,5 @@ in the JavaScript.
 - For **v.1.5+**, the versions that use the dataset, add the **img** tag and any other html directly in the **divText** string:
 
 ```js
-  { btnText: "Bar", divHTML: `<img src="cat.jpg"><p>Recusandae provident doloremque nam, deserunt eveniet quas commodi mollitia dolorem</p>` }
+  {btnText:'Cat', divHTML:`<img src="cat.jpg"><p>Meet my cat!</p>`}
 ```
