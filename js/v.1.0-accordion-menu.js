@@ -1,6 +1,6 @@
 // Accordion Menu
 
-const panelsArr = document.querySelectorAll("section button");
+const panelsArr = document.querySelectorAll("li button");
 
 for (let p = 0; p < panelsArr.length; p++) {
     panelsArr[p].addEventListener("click", showHidePanel);
@@ -8,7 +8,7 @@ for (let p = 0; p < panelsArr.length; p++) {
 
 function showHidePanel() {
     // show-hide (toggle) "active" class,
-    this.classList.toggle("btn-active");
+    this.classList.toggle("btn-hilite");
     console.log(this);
     // show-hide (toggle) div in same section as clicked panel
     // nextElementSibling gets the next element after "this" 

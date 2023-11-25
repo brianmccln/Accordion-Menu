@@ -3,68 +3,66 @@ body {
     font-family: sans-serif;
     line-height: 2em;
     text-align: center;
+    color: #fff;
 }
 
 .container {
     width: 640px;
     padding: 1rem;
     margin: 1rem auto;
-    background-color: #aaa;
+    background-color: #888;
 }
 
-.accordion-wrapper {
+.accordion-ul {
+    list-style-type: none;
     background-color: #eee;
     padding: 1rem;
-    border: 3px dashed aqua;
+    border: 3px solid #555;
     text-align-last: left;
+    color: #555;
+    font-size: 1.1rem;
 }
 
-section button {
+.accordion-ul li {
+    color: #555;
+}
+
+.accordion-ul button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ddd;
-    color: #555;
+    background-color: #ccc;
     cursor: pointer;
     padding: 18px 36px 18px 30px;
     width: 100%;
     border: 1px solid #888;
     outline: none;
-    font-size: 15px;
     letter-spacing: 1px;
-    max-height: 3rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
 }
 
-.btn-active, section button:hover {
-    background-color: #888;
-    color: #eee;
-}
-
-section div {
+.accordion-ul div {
     padding: 0 2rem;
     background-color: #eee;
+    text-align: left;
     /* max-height: 0 instead of display none, 
     to animate height expanding */
     height: 0; 
     overflow: hidden;
-    text-align: left;
     /* change to max-height takes 0.5 seconds,
     which gives the animation effect */
     transition: height 0.5s ease-out;
 }
 
-h1, h2, h3 {
-    color: #fff;
-}
-
-/* span tags */
-.plus-sign {
+.accordion-ul span {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.btn-label {
-    font-size: 1.1rem;
-    font-weight: bold;
-    /* background-color: orange; */
+.accordion-ul button:hover, .btn-hilite {
+    /* reverse accordion button colors on mouseover or click */
+    filter: invert();
 }
