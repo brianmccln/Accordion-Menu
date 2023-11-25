@@ -7,7 +7,7 @@
 
 - In your html page, add this **ul** tag wherever you want the accordion to appear:
 ```js
-    <ul class="accordiion-ul"></ul>
+    <ul class="accordify"></ul>
 ```
 - Import the js file(s) at the end of the body.  
 The different imports are shown below for each of the four versions:
