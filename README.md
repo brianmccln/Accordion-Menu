@@ -63,20 +63,20 @@ in the JavaScript.
     <script src="js/accordion-data.js"></script>
     <script src="js/v.2.0-Accordify.js"></script>
     <script>
-        const accordify = new Accordify(".accordion-ul", accordionData);
+        const accordify = new Accordify(".accordify", accordionData);
     </script>
 ```
 
 **v.2.1 - Accordify OOP Minified** : 
 - Same as v.2.0, just with the JS Class file minified to make it smaller 
-- The minified version, **Accordionify.min.js** is only 558 bytes.
+- The minified version, **Accordify.min.js** is only 558 bytes.
 - To use **v.2.1**, add this to the bottom of your html page.
 
 ```js
     <script src="js/accordion-data.js"></script>
     <script src="js/v.2.1-Accordify.min.js"></script>
     <script>
-        const accordify = new Accordify(".accordion-ul", accordionData);
+        const accordify = new Accordify(".accordify", accordionData);
     </script>
 ```
 - In keeping with the minified theme, you may wish to also use the **.min.css**:
