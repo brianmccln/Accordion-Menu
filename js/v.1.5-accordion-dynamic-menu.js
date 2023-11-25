@@ -23,7 +23,7 @@ accordionData.forEach(e => {
     btn.addEventListener('click', showHidePanel); // button calls function
     li.appendChild(btn); // output button to li
     const div = document.createElement('div'); // make a div
-    div.innerHTML = e.divText; // put the desc in the div
+    div.innerHTML = e.divHTML; // put the desc in the div
     // for html in the div, such a <p> tags, add that in the dataset
     li.appendChild(div); // output the div to the li
 });

@@ -31,7 +31,19 @@ in the JavaScript.
 
 **v.1.0 Accordion Menu** :  
 - The static **ul** and **li** elements are all hard-coded in html.  
-- To use your data, make the change to menu content directly in the html.
+- The hard-coded **li** tags each contain a button and a div.
+- Change to button and div content to be whatever text you wish.
+- You can add images or whatever else you like inside the div.
+```js
+    <li>
+        <button>Blather<span>+</span></button>
+        <div>
+            <p>
+                Blah blee foo bar tic tac toe.
+            </p>
+        </div>
+    </li>
+```
 - To use **v.1.0**, add this to the bottom of your html page:
 
 ```js
@@ -43,7 +55,7 @@ in the JavaScript.
 - The contents of the **".ul-accordion"** are made dynamically in JS.  
 - This version, and all higher versions, import **accordion-data.js**, which contains an array of objects, one object per accordion item.
 - To use **v.1.5**, add this to the bottom of your html page:
-
+- If you want html in the div, such as p-tags, images, etc. you have to add these in the dataset as part of the **divText** string.
 ```js
     <script src="js/accordion-data.js"></script>
     <script src="js/v.1.5-accordion-dynamic-menu.js"></script>
@@ -77,11 +89,29 @@ in the JavaScript.
 
 ### About the **accordion-data.js** file and how to use it:  
 - **accordion-data.js** provides the data for all accordion versions with the exception of **v.1.0**, which is hard-coded.
-- **accordion-data.js**, has two keys: **btnText** and **divText**. 
-- Change the values to be your own text. So if you had two accordion menu buttons, **Foo** and **Bar**, each with some **lorem impum** that appeared when you clicked the  button, you would need to have the followning two objects:
+- **accordion-data.js**, has two keys: **btnText** and **divHTML**. 
+- Change the values to be your own text. Suppose you had two accordion menu buttons, **Foo** and **Bar**. Clicking either button expanded that **li** to reveal a div containing a paragraph of **lorem impum** text. This is what the objects for that would look like:
 ```js
-    { btnText: "Foo", divText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores saepe nam natus, earum provident aperiam ipsum omnis excepturi sit? Totam modi debitis iusto nisi consequuntur necessitatibus maxime?` },
-    { btnText: "Bar", divText: `Recusandae provident doloremque nam, deserunt eveniet quas commodi mollitia dolorem beatae quo ratione vitae, aspernatur corporis asperiores voluptatum et nemo veritatis possimus, repudiandae esse enim?` },
+    { btnText: "Foo", divHTML: `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores saepe nam natus, earum provident aperiam ipsum omnis excepturi sit? Totam modi debitis iusto nisi consequuntur necessitatibus maxime?<p>` },
+    { btnText: "Bar", divHTML: `<p>Recusandae provident doloremque nam, deserunt eveniet quas commodi mollitia dolorem beatae quo ratione vitae, aspernatur corporis asperiores voluptatum et nemo veritatis possimus, repudiandae esse enim?</>` },
 ```
 - **btnText** appears on the individual accordion button. This is what you see to click on.
 - **divText** is the content that shows/hides when accordion opens/closes.
+
+**Adding images to the Accordion**
+- For **v.1.0**, just hard-code the image path into the div:
+```js
+    <li>
+        <button>Blather<span>+</span></button>
+        <div>
+            <image src="some-image.jpg">
+            <p>Blah blee foo bar tic tac toe.</p>
+        </div>
+    </li>
+```
+- For **v.1.5+**, the versions that use the dataset, add the image tag code   
+directly in the **divText** string. Add any other tags, such as **<p>** as well:
+
+```js
+  { btnText: "Bar", divHTML: `<img src="cat.jpg"><p>Recusandae provident doloremque nam, deserunt eveniet quas commodi mollitia dolorem</p>` }
+```
