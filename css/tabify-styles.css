@@ -1,0 +1,92 @@
+body {
+    background-color: #555;
+    font-family: sans-serif;
+    line-height: 2em;
+    text-align: center;
+    color: #fff;
+}
+
+.tabify-container {
+    width: 1000px;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #888;
+    height: 82vh;
+}
+
+.tabify-ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* max-width: 1000px; */
+    list-style-type: none;
+    /* border: 5px dashed #007799; */
+    text-align-last: left;
+    color: #555;
+    font-size: 1.1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tabify-ul li {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 1.75rem;
+    padding: 12px;
+    color: #555;
+    background-color: #ddd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #888;
+}
+
+.tabify-ul button {
+    font-family: monospace;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+}
+
+.tabify-panels {
+    left: -15px;
+    top: -25px;
+    position: relative;
+    width: 900px;
+    height: 450px;
+    /* border: 5px dashed forestgreen; */
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.tabify-panels div {
+    width: 850px;
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 10px;
+    padding: 24px 48px;
+    background-color: beige;
+    color: #333;
+    text-align: left;
+    height: 500px; 
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 1.25rem;
+    color: #333;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 2.25rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tabify-ul button:hover, .btn-hilite {
+    /* reverse tab button colors on mouseover or click */
+    /* filter: invert(); */
+    filter: saturate(2);
+}
