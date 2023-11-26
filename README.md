@@ -64,7 +64,7 @@ in the JavaScript.
 
 ```js
     <script src="js/accordify-data.js"></script>
-    <script src="js/v.2.0-Accordify.js"></script>
+    <script src="js/v.2.0-Accordify-OOP-Class.js"></script>
     <script>
         const accordify = new Accordify(".accordify", accordionData);
     </script>
@@ -77,7 +77,7 @@ in the JavaScript.
 
 ```js
     <script src="js/accordify-data.js"></script>
-    <script src="js/v.2.1-Accordify.min.js"></script>
+    <script src="js/v.2.1-Accordify-OOP-Class.min.js"></script>
     <script>
         const accordify = new Accordify(".accordify", accordionData);
     </script>
